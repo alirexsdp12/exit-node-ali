@@ -84,7 +84,7 @@ function sanitizeHeaders(h: unknown): Record<string, string> {
 export default async function (req: Request): Promise<Response> {
   // Fail closed on the placeholder PSK so a fresh deploy without setup
   // can't accidentally serve as an open relay.
-  if (PSK === "CHANGE_ME_TO_A_STRONG_SECRET") {
+  if (PSK === "0adbe5a784621e2071f90e9723752f001f36ab643901318ce03d0d2e56f7a8f1") {
     return Response.json(
       {
         e:
